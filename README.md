@@ -1,24 +1,25 @@
-# Markdown-cheatsheet
+# Markdown-Cheatsheet
+
 A comprehensive cheatsheet for markdown
 
 ## Basics
 
-| Formatting                                          | Syntax                                                         |
-| --------------------------------------------------- | -------------------------------------------------------------- |
-| **Bold**                                            | `**text**`                                                     |
-| *Italic*                                            | `*text*`                                                       |
-| ### Heading                                         | `#text //as many # as you want, subheaders the more # you add` |
-| >  blockquote                                       | `>text`                                                        |
-| 1. ordered list                                     | `1. text`                                                      |
-| - unordered list<br>                                | `- text`                                                       |
-| `code`                                              | `` `code text` ``                                              |
-| codeblock                                           | ` ```language codeblock``` `                                   |
-| Rule                                                | `----------`                                                   |
-| [Link](https://www.youtube.com/watch?v=E4WlUXrJgy4) | `[text](URL)`                                                  |
-| ~~Strikethrough~~                                   | `~~text~~`                                                     |
-| ==Highlight==                                       | `==text==`                                                     |
-| - [] task                                           | `- [] text`                                                    |
-|                                                     |                                                                |
+| Formatting                                          | Syntax                                                               |
+| --------------------------------------------------- | -------------------------------------------------------------------- |
+| **Bold**                                            | `**text**`                                                           |
+| *Italic*                                            | `*text*`                                                             |
+| ### Heading                                         | `#text //as many # as you want, subheaders the more # you add`       |
+| >  blockquote                                       | `>text`                                                              |
+| 1. ordered list                                     | `1. text`                                                            |
+| - unordered list<br>                                | `- text`                                                             |
+| `code`                                              | `` `code text` ``                                                    |
+| codeblock                                           | <code>&#96;&#96;&#96;language<br>codeblock<br>&#96;&#96;&#96;</code> |
+| Rule                                                | `----------`                                                         |
+| [Link](https://www.youtube.com/watch?v=E4WlUXrJgy4) | `[text](URL)`                                                        |
+| ~~Strikethrough~~                                   | `~~text~~`                                                           |
+| ==Highlight==                                       | `==text==`                                                           |
+| - [ ] task                                          | `- [ ] text`                                                         |
+| <!-- Comment -->                                    | `<!-- text -->`                                                      |
 
 ## Math
 
@@ -107,6 +108,24 @@ A + B
 $$
 ```
 
+**difference**
+```diff  
++ added line 
+- removed line  
+```
+
+**hidden content**
+<details>
+<summary>Click me</summary>
+hidden content
+</details>
+
+```<details>
+<summary>Click me</summary>
+hidden content
+</details>
+```
+
 **Diagram**
 Diagrams are constructed in a codeblock with language `mermaid` and types (for instance `graph TD`).
 ```Diagram
@@ -132,3 +151,25 @@ lock()
 
 }
 ```
+
+
+## Github specific
+
+| Formatting | Syntax      |
+| ---------- | ----------- |
+| @username  | `@username` |
+| #issue     | `#issue`    |
+> [!NOTE]
+> help  
+
+`> [!NOTE]`
+
+> [!TIP]
+> tip
+
+`> [!TIP]`
+
+> [!WARNING]
+> Warning!
+
+`> [!WARNING]`
