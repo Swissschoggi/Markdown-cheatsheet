@@ -94,6 +94,11 @@ A comprehensive cheatsheet for markdown
 | $\psi$     | `$\psi$`     | $\Psi$     | `$\Psi$`     |
 | $\omega$   | `$\omega$`   | $\Omega$   | `$\Omega$`   |
 
+## Style
+
+You can use html to style text:
+`<span style="color:red"> function application</span>`
+
 ## Blocks
 **math**
 ```Math
@@ -103,31 +108,8 @@ $$
 ```
 
 **Diagram**
-``` `mermaid
-classDiagram
-
-Vehicle <|-- Car
-
-class Vehicle{
-
-speed
-
-accelerate()
-
-brake()
-
-}
-
-class Car{
-
-doors
-
-lock()
-
-}
-` ```
-
-```mermaid
+Diagrams are constructed in a codeblock with language `mermaid` and types (for instance `graph TD`).
+```Diagram
 classDiagram
 
 Vehicle <|-- Car
